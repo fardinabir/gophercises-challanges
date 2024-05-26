@@ -104,28 +104,3 @@ func csvLoader() [][]string {
 // //3+3,6
 // //2+4,6
 // //5+2,7
-//func main() {
-//	var wg sync.WaitGroup
-//	wg.Add(1)
-//	go func1(&wg)
-//	wg.Add(1)
-//	go func() {
-//		defer wg.Done()
-//		time.Sleep(5 * time.Second)
-//		fmt.Println("Returning from func2")
-//	}()
-//	wg.Wait()
-//	fmt.Println("Returning from all funcs")
-//}
-//
-//func func1(group *sync.WaitGroup) {
-//	defer group.Done()
-//	time.Sleep(10 * time.Second)
-//	fmt.Println("Returning from func1")
-//}
-//
-//func func2(group *sync.WaitGroup) {
-//	defer group.Done()
-//	time.Sleep(5 * time.Second)
-//	fmt.Println("Returning from func2")
-//}
